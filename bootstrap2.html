@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bootstrap Project</title>
+    <style>
+        #logo {
+            display: block;
+            margin: auto;
+            width: 800px;
+            height: 160px;
+            margin-top: 10px;
+        }
+
+        nav {
+            border: 1px solid rgb(182, 172, 172);
+            background-color: rgb(205, 247, 233);
+        }
+
+        #Para {
+            font-size: 40px;
+        }
+        .flex-container {
+  display: flex;
+  background-color: white;
+  margin: 50px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 4.5px;
+  padding: 5px;
+  font-size: 30px;
+}
+      /* *{ 
+  box-sizing: border-box;
+    }
+
+.row {
+  display: flex;
+  
+}
+
+
+ .column {
+  flex: 20%;
+  padding: 0px;
+  margin: 0px;
+}    */
+*{
+    box-sizing: border-box;
+}
+.Image{
+    width: 200px;
+    height: 200px;
+    /* position:absolute; */
+
+}  
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SAHYOG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bootstrap2.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="/log.html">Login</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="log.html">As a Patient</a></li>
+                            <li><a class="dropdown-item" href="doctorreg.html">As a Doctor</a></li>
+                            <li>
+
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="#">Medicine</a></li>
+                            <li><a class="dropdown-item" href="#">Book Appointment</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Facilities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Ambulance</a></li>
+                            <li><a class="dropdown-item" href="#">Consult</a></li>
+                            <li>
+
+                            </li>
+                            <li><a class="dropdown-item" href="#">Medicine</a></li>
+                            <li><a class="dropdown-item" href="#">Book Appointment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">Help</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <img src="logo1.jpeg" alt="" id="logo">
+    <p align="center" id="Para"> <b>Making your life healthy.Digitally</b> </p>
+
+    <div>
+        <div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="efg.jpg" class="d-block w-100" alt="..." height="400px" width="200px">
+                        <div class="carousel-caption d-none d-md-block">
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="doctor.jpg" class="d-block w-100" alt="..." height="400px" width="200px">
+                        <div class="carousel-caption d-none d-md-block">
+                            
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="mno.jpg" class="d-block w-100" alt="..." height="400px" width="200px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                           
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br>
+     <!-- <div class="row">
+        <div class="column">
+          <img src="prb1.jpeg" alt="" class="Image" >
+        </div>
+        <div class="column">
+          <img src="prb2.jpeg" alt="" class="Image">
+        </div>
+        <div class="column">
+          <img src="prb3.jpeg" alt=""class="Image">
+        </div> -->
+        <!-- <div class="column">
+            <img src="prb4.jpeg" alt=""class="Image" >
+          </div>
+          <div class="column">
+            <img src="prb5.jpeg" alt="" class="Image">
+          </div>
+          <div class="column">
+            <img src="prb6.jpeg" alt="" class="Image">
+          </div> -->
+
+
+      
+
+    <!-- <div class="row1">
+        <div class="column">
+          <img src="logo2.jpeg" alt="Snow" width:300px height="200px">
+          <p id="Para">Location</p>
+        </div>
+        <div class="column">
+          <img src="logo3.jpeg" alt="Forest" width:300px height="200px">
+          <p id="Para">Consult</p>
+        </div>
+         <div class="column">
+          <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+        </div> 
+      </div>
+        -->
+
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="prb1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="prb2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="prb3.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="prb4.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="prb5.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="prb6.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
+          
+        <div class="row mb-2 my-5">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary"></strong>
+                        <h3 class="mb-0">Navigate Through Location</h3>
+                        <div class="mb-1 text-muted"></div>
+                        <p class="card-text mb-auto"></p>
+                        <a href="location.html" class="stretched-link" style="text-decoration: none; font-size: 30px;">Location</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="logo2.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text></>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success"></strong>
+                        <h3 class="mb-0">Consult our Doctors</h3>
+                        <div class="mb-1 text-muted"></div>
+                        <p class="mb-auto"></p>
+                        <a href="consult.html" class="stretched-link" style="text-decoration: none; font-size: 30px;">Consult</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="logo3.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text></class=>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="flex-container">
+            <div> <img src="prb1.jpeg" alt="" class="Image">
+                <a href="https://en.wikipedia.org/wiki/Vitamin" style="text-decoration: none;">Vitamins</a>
+             </div>
+            <div> <img src="prb2.jpeg" alt=""class="Image">
+                <p>Specialized for women</p>
+             </div>
+            <div> <img src="prb3.jpeg" alt=""class="Image">
+                <a href="https://pharmeasy.in/" style="text-decoration: none;">Medicine</a>
+             </div>  
+              <div> <img src="prb4.jpeg" alt=""class="Image"> 
+                <a href="https://en.wikipedia.org/wiki/COVID-19" style="text-decoration: none;">Covid</a>
+            </div>
+            <div> <img src="prb5.jpeg" alt=""class="Image">
+                <p>Cough, fever, cold, and infection</p>
+             </div>
+             <div> <img src="prb6.jpeg" alt=""class="Image"> 
+<p>Book a full body checkup</p>
+            </div>   
+            
+          </div>
+          
+
+    <!-- <div class="container">
+        <div class="row mb-2 my-5">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary"></strong>
+                        <h3 class="mb-0">Consult Our Doctors</h3>
+                        <div class="mb-1 text-muted"></div>
+                        <p class="card-text mb-auto"></p>
+                        <a href="#" class="stretched-link">Location</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="logo2.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text></>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success"></strong>
+                        <h3 class="mb-0">Navigate Through Location</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto"></p>
+                        <a href="#" class="stretched-link">Consult</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="logo3.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em"></text></class=>
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+                  
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
